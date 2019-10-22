@@ -161,6 +161,7 @@ body {
 .time {
   background: linear-gradient(to right, #b2b2b2 0%, #73797a 100%);
   width: 50%;
+  border: 1px solid #9e9d9d;
   height: 3px;
   position: absolute;
   transform-origin: 100%;
@@ -171,13 +172,8 @@ body {
 }
 .hour {
   height: 0.6rem;
-  border: 1px solid #9e9d9d;
+ 
 }
 .minute {
   height: 0.4rem;
-}
-.center {
-    height:5px;
-    width:5px;
-    background-color: red;
 }
