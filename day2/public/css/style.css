@@ -134,6 +134,8 @@ body {
   background-image: url("../img/clock.jpeg");
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   display: flex;
 }
 .blank {
@@ -168,12 +170,22 @@ body {
   transform: rotate(90deg);
   transition: all 0.5s;
   border-radius: 1.5rem;
-  transition-timing-function: cubic-bezier(0.1, 1.7, 0.58, 1);
+  transform: translateY(-3px);
+  transition-timing-function: cubic-bezier(0.1, 1.75, 0.58, 1);
+  box-shadow:
+  0 0 0 2px rgba(0,0,0,0.1),
+  inset 0 0 0 3px #EFEFEF,
+  inset 0 0 10px black,
+  0 0 10px rgba(0,0,0,0.2);
+}
+.noTransition {
+  transition: none;
 }
 .hour {
-  height: 0.6rem;
- 
+  height: 0.7rem;
+
 }
 .minute {
   height: 0.4rem;
+
 }

@@ -1,0 +1,43 @@
+:root {
+    --base:#fcde00;
+    --spacing:10px;
+    --blur:10px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgb(7, 7, 124);
+}
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+span {
+  font-size: 4rem;
+  color: var(--base);
+}
+label {
+  font-size: 2rem;
+  color: white;
+  font-weight: 100;
+}
+input[type="range"] {
+  width: 6rem;
+}
+input[type="color"] {
+  width: 20rem;
+  height: 1.2rem;
+  margin: 2rem 0;
+}
+img {
+  width: 100%;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
